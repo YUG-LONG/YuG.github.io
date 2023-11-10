@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>一串乱码</title>
+	</head>
+	<body>
+		<span id="text"></span>
+		<div class="app">
+			<div class="font25">线性表只表尾进行插入</div>
+		</div>
+
+		<script>
+			const text = "大伟聊前端! 大伟前! 大伟聊前端! 大伟前! 大伟端! 大伟聊端! 大伟端! 大聊前端!";
+			const textContainer = document.getElementById("text");
+
+			function showText(index) {
+				if (index < text.length) {
+					const char = text.charAt(index);
+					textContainer.innerHTML += char;
+					index++;
+					setTimeout(() => showText(index), 100);
+				}
+			}
+			showText(0)
+		</script>
+	</body>
+</html>

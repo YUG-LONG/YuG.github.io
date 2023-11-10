@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>车票乘车信息</title>
+		<style>
+			body {
+				background-image: url('../实现图片覆盖转动/images/06.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			.container {
+				color: black;
+				/* 设置文本的颜色为黑色。 */
+				display: flex;
+				/* 通过使用弹性布局（Flexbox），你可以更方便地控制元素的布局和对齐方式 */
+				flex-direction: column;
+				/* 排列方向为垂直列。通过设置为 column，子项会按照从上到下的顺序排列。 */
+				align-items: center;
+				/* 设置为 center，子项会在垂直方向上居中对齐。 */
+				margin-top: 50px;
+				/* 设置元素的上外边距为 210 像素。 */
+			}
+
+			.ticket {
+				width: 200px;
+				padding: 20px;
+				border-radius: 45px;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+				margin-bottom: 20px;
+				backdrop-filter: blur(55px);
+			}
+			
+			.TICKET {
+				width: 170px;
+				padding: 16px;
+				border-radius: 25px;
+				/* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+				backdrop-filter: blur(100px);
+			}
+
+			.info {
+				margin-bottom: 10px;
+			}
+
+			.location {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			label {
+				font-weight: bold;
+				display: block;
+			}
+
+			.value {
+				margin-top: 5px;
+			}
+			
+			.out-text{
+				color: skyblue;
+			}
+			.inner-text_input:hover .out-text{
+				font-size: 120%;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="ticket">
+				<h3>成都驷马桥</h3>
+				<div class="info">
+					<div class="location">
+						<label>川 j 8763</label>
+						<span class="value">14:00</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="ticket">
+				<h3>车票2</h3>
+				<div class="info">
+					<div class="location">
+						<label>起点：</label>
+						<span class="value">广州</span>
+					</div>
+					<div class="location">
+						<label>终点：</label>
+						<span class="value">深圳</span>
+					</div>
+				</div>
+				<div class="TICKET">
+					<div class="journey-details">
+						<div class="info">
+							<label>车票行程区间：</label>
+							<span class="value">城市A - 城市B</span>
+						</div>
+						<div class="info">
+							<label>乘坐列车号：</label>
+							<span class="value">G1234</span>
+						</div>
+						<div class="info">
+							<label>乘坐时间：</label>
+							<span class="value">10月10日 9:00 AM</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ticket">
+				<div class="info">
+					<label>车票行程区间：</label>
+					<span class="value">城市A - 城市B</span>
+				</div>
+				<div class="info">
+					<label>乘坐列车号：</label>
+					<span class="value">G1234</span>
+				</div>
+				<div class="info">
+					<label>乘坐时间：</label>
+					<span class="value">2023年10月10日 9:00 AM</span>
+				</div>
+				<div class="location">
+					<label>龙雨高：</label>
+					<span class="value">14车17</span>
+				</div>
+				<div class="location">
+					<label>谢银桃：</label>
+					<span class="value">14车13</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="inner-text_input">
+			<input type="text" id="myinput">
+			<span class="out-text">asgradg</span>
+		</div>
+	</body>
+</html>

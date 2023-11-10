@@ -1,0 +1,48 @@
+. {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../../实现图片覆盖转动/images/06.jpg");
+}
+
+.backgroundImage{
+	width: 36rem;
+	height: 27rem;
+	margin-top: 18%;
+	margin-left: 7%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 0.1875rem;
+	backdrop-filter: blur(100px);
+	border-radius: 1.5625rem;
+}
+
+.alabel{
+	display: inline-block;
+	margin-left: 7%;
+	margin-right: 5%;
+	font-size: 240%;
+	text-decoration: none;
+	color: pink;
+	margin-top: 1.875rem;
+}
+.EnterData {
+	margin-top: 0.9375rem;
+}
+
+.text_userName {
+	display: none;
+}
+
+.userName {
+	padding: 12px 30px;/* 设置边框大小*/
+	border-radius: 10px;/* 设置为圆角 */
+}
+
+.EnterData:hover .text_userName {
+	display: inline;
+	color: skyblue;
+	font-size: 140%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body onload="load()">
+		<form action="" style="text-align: center;" onsubmit="subfn()">
+			<!--onblur失去焦点事件   onfocus获得焦点事件 onkeydown键盘被按下-->
+			<input type="text" name="username" onblur="bfn()" onfocus="ffN()" onkeydown="kfn()">
+			<input id="b1" type="submit" value="提交">
+			<input id="b3" type="button" value="单击事件" onclick=Fn()>
+		</form>
+
+		<table width="400px" border="1" cellspacing="0" align="center" onmouseover="over()" onmouseout="out()">
+			<tr>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>分数</th>
+				<th>评语</th>
+			</tr>
+			<tr align="center">
+				<th>001</th>
+				<th>tom</th>
+				<th>78</th>
+				<th>评语223</th>
+			</tr>
+			<tr align="center">
+				<th>002</th>
+				<th>WEF</th>
+				<th>98</th>
+				<th>评语32</th>
+			</tr>
+			<tr align="center">
+				<th>003</th>
+				<th>TFGH</th>
+				<th>67</th>
+				<th>评语5454</th>
+			</tr>
+		</table>
+
+	</body>
+
+	<script>
+		//onload : 页面 或元素加载完成后触发方法 
+		function load() {
+			console.log("第一个 load方法")
+		}
+		// 单击事件 按钮执行方法
+		function Fn() {
+			console.log("检测到你点击了【单击事件】这个按钮 ")
+		}
+
+		function subfn() {
+			alert("检测到3个按钮已完成加载 ")
+		}
+
+		function ffN() {
+			console.log("检测到点击 输入框！")
+		}
+
+		function bfn() {
+			console.log("检测到离开 输入框！")
+		}
+
+		function kfn() {
+			console.log("检测到输入框在输入！")
+		}
+		function over() {
+			console.log("检测到鼠标光标在表格上方 ")
+		}
+		function out() {
+			console.log("检测到鼠标光标离开了表格 ")
+		}
+	</script>
+</html>
