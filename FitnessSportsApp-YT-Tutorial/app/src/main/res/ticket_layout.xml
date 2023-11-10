@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8EF6A4">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A9F6FF">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:layout_marginBottom="76dp"
+            android:background="@drawable/edittext_background"
+            android:hint="列车号"
+            android:padding="10dp"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="124dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="填写乘车人"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <EditText
+            android:id="@+id/editTextText10"
+            android:layout_width="124dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="填写乘车人"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="454dp" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="124dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="填写乘车人"
+
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="306dp" />
+-->
+
+        <Button
+            android:id="@+id/my_button"
+            android:layout_width="254dp"
+            android:layout_height="112dp"
+            android:layout_marginBottom="52dp"
+            android:text="添加新的行程"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.414"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="乘车起点"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText4"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="123dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="乘车终点"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextText2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.864" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="488dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="列车抵达时间"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="51dp"
+            android:text="       你需要填写乘车人、乘车区间、乘车时间到达时间、列车号以及乘车人座位等信息"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="488dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="列车到达时间"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextText4"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <!--
+
+                <EditText
+                    android:id="@+id/editTextText6"
+                    android:layout_width="189dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="乘车人座位号"
+                    tools:layout_editor_absoluteX="190dp"
+                    tools:layout_editor_absoluteY="309dp" />
+
+
+                <EditText
+                    android:id="@+id/editTextText8"
+                    android:layout_width="189dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="乘车人座位号"
+                    tools:layout_editor_absoluteX="190dp"
+                    tools:layout_editor_absoluteY="382dp" />
+
+                <EditText
+                    android:id="@+id/editTextText12"
+                    android:layout_width="189dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="乘车人座位号"
+                    tools:layout_editor_absoluteX="190dp"
+                    tools:layout_editor_absoluteY="382dp" />
+
+                <EditText
+                    android:id="@+id/editTextText9"
+                    android:layout_width="189dp"
+                    android:layout_height="55dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="乘车人座位号"
+                    tools:layout_editor_absoluteX="190dp"
+                    tools:layout_editor_absoluteY="457dp" />
+        -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
